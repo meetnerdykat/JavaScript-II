@@ -1,9 +1,21 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const cherryPie = () => {
+  let slicesIHaveNow = 10;
+  return function() {
+    // slicesIHaveNow = slicesIHaveNow + 5;
+    return ++slicesIHaveNow;
+    // return slicesIHaveNow;
+  };
+};
 
+const slicesIGetToGobbleUp = cherryPie();
+console.log(slicesIGetToGobbleUp());
+console.log(slicesIGetToGobbleUp());
+console.log(slicesIGetToGobbleUp());
+console.log(slicesIGetToGobbleUp());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
